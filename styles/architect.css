@@ -157,6 +157,9 @@ header{
  font-weight: 600;
  line-height: 1.4; 
 }
+.feature-img img{
+    width: 100%;
+}
 #year{
     font-size: 3rem;
    font-weight: 600;
@@ -226,6 +229,26 @@ header{
     margin: 0 auto;
 
 }
+.features {
+    display: flex;
+    flex-direction: column;
+}
+.features-list{
+    width:100%;
+    text-align: center;
+}
+.features-list h2{
+    line-height: 3rem;
+}
+.features-list p{
+    width:100%;
+}
+.card-container div{
+    width:100%;
+}
+#box{
+    display: none;
+}
 }
 /*tablet*/
 @media screen and (min-width:576px) and (max-width:992px) {
@@ -249,5 +272,29 @@ header{
     margin: 0px auto;
     width: 95%;
     text-align: center;
+}
+.features {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+.features-list {
+    margin-right: 0rem;
+}
+.features-list p{
+    width:100%;
+}
+.card-container div{
+    width: 100%;
+}
+#box {
+    width: 228px;
+    height: 159px;
+    margin-top: -6rem;
+    margin-left: 1rem;
+}
+#year{
+    font-size: 2rem;
 }
 }

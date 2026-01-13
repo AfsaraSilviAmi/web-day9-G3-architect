@@ -82,8 +82,44 @@ header{
 .banner-img img{
     width: 100%;
     margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.quick-list{
+    display: flex;
+    
+}
+.list-pics{
+    margin-top: 2rem;
 }
 
+.list-pics img{
+    margin: 0.5em;
+    max-width: 100%;
+}
+.quick-head{
+    margin-top: 267px;
+    width: 950px;
+    margin-right: 200px;
+    text-align: left;
+    
+}
+.quick-head h2{
+  font-size: 2.8rem;
+  font-weight: 400;
+  line-height: 3.3rem;
+  color: rgba(114, 114, 114, 1);
+}
+.quick-head span{
+    font-weight: 600;
+    color: rgba(19, 19, 19, 1);
+}
+.quick-head p{
+    color: rgba(114, 114, 114, 1);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+}
+/*phone*/
 @media screen and (max-width:576px){
 .navbar {
     display: flex;
@@ -118,7 +154,44 @@ header{
     height: 3rem;
     font-size: 1rem;
 }
+.quick-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.list-pics{
+    display: grid;
+   
+}
+.quick-head {
+    width: 332px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+}
+/*tablet*/
 @media screen and (min-width:576px) and (max-width:992px) {
+    .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quick-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list-pics{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+   
+}
+.quick-head {
+    margin: 0px auto;
+    width: 550px;
     
+    text-align: center;
+}
 }
